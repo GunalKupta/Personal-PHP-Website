@@ -1,0 +1,57 @@
+[[File:linkedin.png|px=16]]
+[https://www.linkedin.com/in/gunalkupta/ LinkedIn]
+
+[[File:github.png|px=16]]
+[https://www.github.com/GunalKupta GitHub]
+
+=== Honors Computer Science Student at Texas A&M University. ===
+
+== Education ==
+'''Texas A&M University''', College Station, TX, ''Expected May 2023''
+* Pursuing B.S. in Computer Science & Minor in Psychology
+* Cumulative GPA: 4.0 / 4.0
+* University + Engineering Honors Programs
+* Dean’s Honor Roll
+** Spring 2020, Fall 2020, Spring 2021
+
+== Software Skills ==
+* '''Languages'''
+** Golang, JavaScript, HTML/CSS, C/C++, Java, PostgreSQL, Python, PHP, Haskell, Swift.
+* '''Tools & Technologies'''
+** Google Apps Scripts, REST APIs, Kubernetes, Docker, Apache Kafka & Confluent, gRPC.
+** GitHub, Visual Studio Code, Xcode.
+** CI/CD, TDD, Agile SDLC; Rancher, Jenkins, Postman/Newman, k6, JIRA/Confluence.
+
+== Professional Experience ==
+'''Varis''', Independent subsidiary of the ODP Corporation
+* '''Software Development Engineer I''', Part-time, ''August 2021 – Present''
+** Developing microservices to automate business-critical functions, such as the '''translation of documents''' between internal and partner formats.
+* '''Software Engineering Intern''' - ''May 2021 – August 2021''
+** Designed and developed an internal solution for '''B2B platform testing''' & development leveraging '''REST APIs''' and a '''microservices architecture'''.
+** Used Test-Driven Development to enable seamless '''CI/CD''', deploying Go microservices in Kubernetes using Docker.
+
+'''ENDEAVR Institute''', Texas A&M University
+* '''Software Engineer''', Part-time, ''July 2020 – Present''
+** Enabling the operation of telemedicine services in underserved communities.
+** Designed a web kiosk and Google Apps Scripts (GAS) to set up '''telemedicine visits & appointments''' with remote physicians.
+** Currently implementing a '''network of scripts & web apps''' in GAS from the ground up to build an interface & management platform for virtual operators, utilizing '''REST calls''' and Twilio.
+
+== Leadership / Extracurricular Activities ==
+'''Vice President of Programming''', Honors Student Council, ''May 2021 – Present''
+* Responsible for organizing social events & building community among all honors students at TAMU, as well as tracking their participation in events using Google Sheets.
+
+'''Ambassador''', Engineering Honors Program, ''January 2021 – Present''
+* Representing & promoting Engineering Honors to qualified current & prospective students & families.
+* '''Track Student Lead''' ''(since September 2021)'' – Organizing and hosting internal events to build community within the Engineering Honors CSCE department.
+
+'''Webmaster''' ''(& Performer since 2019)'', TAMU Percussion Studio, ''May 2021 – Present''
+* Managing the website and technical workflows for the organization.
+
+'''Sophomore Advisor (SA)''', Honors Housing Community, ''May 2020 – May 2021''
+* Served as a '''peer mentor''' to University Honors freshmen for the 2020-2021 academic year.
+* Organized & hosted events, led weekly meetings & '''implemented curriculum''', and mentored & supported 14 freshmen academically and socially.
+
+== Additional Skills ==
+'''Foreign Languages'''
+* Spanish, Hindi ''(basic)''; Korean ''(elementary)''.
+

@@ -1,0 +1,72 @@
+Personal website development
+
+''Kunal Gupta''
+
+== 1. Introduction ==
+
+Welcome to my PHP website! This website was built for Project 1 of my CSCE 315: Honors Programming Studio course in Fall 2021. During this project, I expected to learn more about the web development process and also gain coding experience in '''PHP, JavaScript, HTML, & CSS'''.
+
+In section 2, I will go over my previous relevant development experiences, which include some web design and development.
+In section 3, I will explain the development process of this project, starting with initial research all the way through debugging and testing.
+In section 4, I will discuss what I learned while doing this project, including lessons and future goals.
+In section 5, I will conclude by summarizing my experience with this project.
+In section 6, I will provide references to different resources I used while doing this project.
+
+== 2. Previous development experience ==
+
+Going into this project, I had pretty extensive experience with JavaScript and a decent amount of experience with HTML & CSS, but no experience with PHP and only mere exposure to RegEx.
+
+In my part-time software engineering job with the [http://endeavr.city ENDEAVR Institute], I work almost exclusively with JavaScript, building Google Apps Scripts to automate many aspects of the operation of telemedicine services. I work with Google Sheets API to automate the handling of patient health data, and I work heavily with Gmail and the Google Calendar APIs to set up telemedicine visits & appointments, as well as coordinate the appointments with our partnered physicians. I have been working for ENDEAVR for over a year, so I feel very experienced with JavaScript and Google Apps Scripts.
+
+
+As the Webmaster for one of the student organizations I am involved in at Texas A&M University (TAMU Percussion Studio), I am responsible for maintaining the [https://www.tamupercussionstudio.com organization’s website].
+The website was built from scratch by a previous webmaster using HTML, CSS, and JavaScript, but in the process of updating, improving, and otherwise maintaining the site, I gained hands-on experience with web development that would be used by real prospective students. Before this experience, I had just done online tutorials to learn the very basics of HTML & CSS but never applied the knowledge to a real project.
+
+When beginning work on this project, my past experience with frontend development helped tremendously. Since I already had experience with HTML and CSS and knew the fundamentals, learning how to use PHP to output website content in HTML was a trivial task. For example, since I already knew how to build tables and grids in HTML using CSS, using PHP to output the results of CSV processing, wikitext generation, and matrix display mode in the gallery took way less time to accomplish than it did for some of my peers.
+
+
+== 3. Development process ==
+
+The planning and research for this project basically followed the weekly deliverable schedule. Each week, the development for that week’s deliverable involved four major steps:
+# '''Research'''
+# '''Planning'''
+# '''Implementation'''
+# '''Testing / debugging'''
+
+My first task was to implement a CSV processor, so the first thing I needed to research were regular expressions, and how to build them myself. The professor and TA provided us with a few resources [1-3] to get started on learning how to create regular expressions and tools for debugging. Once I had RegEx that worked for most CSV files, I wrote a simple PHP script to process a CSV file line by line and print out HTML to make a table. This was the first program I ever wrote in PHP. I quickly found tiny bugs inside the regular expression I had built for reading cells in a CSV, so I had to use trial and error for a decent amount of time until the bugs disappeared (which becomes the case for every deliverable involving RegEx in this project).
+
+Once I had built a CSV processor, I felt more confident in my abilities to build a wikitext processor. This deliverable involved a bunch of regular expressions, but they were simpler than the regular expression I had built for the CSV processor or I was able to find them online (such as the URL-matching regular expression). The Wikipedia Sandbox [4] was extremely useful in figuring what the wikitext processor should be doing in specific cases. The design phase for the wikitext processor was much more involved because there was a lot of code that could be reused, and I wanted to make sure everything was as modular as possible. This deliverable allowed me to get more comfortable programming in PHP because wikitext processing requires a lot of actual logic, whereas the CSV processor was basically just a regular expression that did all the work. These first two deliverables (CSV processor and wikitext processor) gave me a solid PHP foundation to move on to building the future deliverables, such as the image gallery and the search feature.
+
+One of the most challenging deliverables was the website’s search and highlight feature, where a user could input a search term, and the term would be highlighted on the relevant pages. This was a challenge because the search & replace starter code we were given only worked with replacing raw text using text nodes [7] in the HTML Document Object Model (DOM) of a webpage and did not allow HTML injection (for example, `mark` or `span` tags for highlighting text). I experimented for multiple days, trying to modify various properties of the DOM nodes or create new children nodes in both PHP and JavaScript to no avail. When I realized we didn’t have to use the starter code in our solution, I decided to take a different approach. I knew HTML elements had an `innerHTML` property that ''does'' allow HTML injection, so I created a regular expression that matched a search term 
+'''as long as it was not part of an HTML tag''', and then just used RegEx to surround every match in the DOM body’s `innerHTML` with `mark` tags to highlight it. This solution was much simpler than what we went over in class and worked pretty well.
+
+Overall, the development process of this project was mostly debugging, which is to be expected from any undertaking involving software development, and the learning experience was very valuable.
+
+== 4. Lessons learned ==
+
+Right off the bat, one of the most obvious things I learned during this project was how to program in PHP and how to build regular expressions. Additionally, I gained more experience with front-end web development, which is a field that has interested me for a while now.
+
+One of the things I liked most about this project is that while doing it, I was learning how to use actual development methodologies, and in the end, I actually had something to show for it. I can definitely see myself repurposing this website to replace my current ePortfolio for University Honors.
+
+That being said, my website is far from ready to be shown to the world. One thing I would like to improve is to add a bunch of styling to all aspects of the website to make it visually appealing. This would involve getting even more comfortable with CSS but I think the end result would be worth it. I would be able to show off the website to future employers who might actually want to look at it.
+
+== 5. Conclusion ==
+
+In conclusion, the PHP website project for CSCE 315 has been a positive educational experience. There were definitely a few nights where I was up pretty late adding handling for unnecessary error cases or adding CSS to make the website prettier than it needed to be, but this project cultivated a great environment for me to practice real development skills while building a useful product that I can use for my own purposes, and have fun along the way.
+
+== 6. References ==
+
+[1] "regex101: build, test, and debug regex." Available: https://regex101.com/ [Accessed Sep. 24, 2021].
+
+[2] "PHP Regex for Web Developers." CatsWhoCode. Available: https://catswhocode.com/php-regex/ [Accessed Sep. 19, 2021].
+
+[3] "PHP cheatsheet." DevHints.io. Available: https://devhints.io/wip/php [Accessed Sep. 12, 2021].
+
+[4] "Wikipedia:Sandbox." Wikipedia. Available: https://en.wikipedia.org/wiki/Wikipedia:Sandbox [Accessed Sep. 26, 2021].
+
+[5] "HTML Forms." W3Schools. Available: https://www.w3schools.com/html/html_forms.asp [Accessed Sep. 17, 2021].
+
+[6] C. House. "A Complete Guide to Grid." CSS-Tricks. Available: https://css-tricks.com/snippets/css/complete-guide-grid/ [Accessed Sep. 18, 2021].
+
+[7] "Node." Mozilla MDN Web Docs. Available: https://developer.mozilla.org/en-US/docs/Web/API/Node [Accessed Sep. 26, 2021].
+

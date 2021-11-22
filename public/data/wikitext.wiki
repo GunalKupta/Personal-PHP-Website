@@ -1,0 +1,82 @@
+1. Section headings (do not need to implement the table of contents).
+
+= Heading 1 =
+== Heading 2 ==
+=== Heading 3 ===
+==== Heading 4 ====
+===== Heading 5 =====
+====== Heading 6 ======
+
+2. Horizontal rule
+
+----
+
+3. Line breaks (and paragraphs)
+
+A single newline here
+has no effect on the layout.
+
+But an empty line starts a new paragraph, 
+or ends a list or an indented part.
+
+4. Indent text (note: no Outdent needed)
+
+Indentation as used on talk pages:
+:Each colon at the start of a line
+::causes the line to be indented by three more character positions.
+:::(The indentation persists
+so long as no carriage return or line break is used.)
+:::Repeat the indentation at any line break.
+::::Use an extra colon for each response.
+:::::And so forth ...
+::::::And so on ...
+
+* UPDATE: Only need to support 1st level ":" and 2nd level indents "::".
+
+5. Unordered lists (no need to go below 2 levels)
+
+* Item1
+* Item2
+* Item3
+* Item4
+** Sub-item 4 a)
+** Sub-item 4 b)
+* Item5
+
+6. Ordered lists (no need to go below 2 levels)
+
+# Item1
+# Item2
+# Item3
+# Item4
+## Sub-item 1
+## Sub-item 2
+# Item5
+
+7. Italics and bold
+
+To ''italicize text'', put two consecutive apostrophes on each side of it.
+
+Three apostrophes each side will '''bold the text'''.
+
+Five consecutive apostrophes on each side (two for italics plus three for bold) produces '''''bold italics'''''.
+
+8. Links
+
+	10-1. Named links
+
+	[http://www.wikipedia.org Wikipedia]
+
+	10-2. Bare URL
+	http://www.wikipedia.org
+
+
+9. Images
+
+	11-1. Single picture
+
+	A picture: [[File:wiki.png]]
+
+	11-2. Single picture with size
+
+	A picture: [[File:wiki.png|px=100]]
